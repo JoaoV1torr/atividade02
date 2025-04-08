@@ -3,7 +3,7 @@
 import React from 'react';
 import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
 
-const technologies = [
+const Albuns = [
   {
     id: '0',
     name: 'Clube da esquina',
@@ -42,7 +42,7 @@ const App = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Melodia Nacional: Os Álbuns Imortais da MPB</Text>
       <FlatList
-        data={technologies}
+        data={Albuns}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.card}>
